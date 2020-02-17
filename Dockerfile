@@ -4,7 +4,7 @@ LABEL version="3.1"
 
 # Install the java runtime environment 8
 #RUN apt-get update && apt-get install openjdk-8-jre -y
-RUN apt-get -q update && apt-get -y -q install --no-install-recommends -t stretch-backports openjdk-8-jdk
+#RUN apt-get -q update && apt-get -y -q install --no-install-recommends -t stretch-backports openjdk-8-jdk
 
 # Install the sonar scanner for .netCore
 RUN dotnet tool install --global dotnet-sonarscanner --version 4.8.0
