@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/core/sdk:3.1
+FROM microsoft/dotnet:3.1-sdk
 LABEL AHMANE Hafid <hahmane@sii.fr>
 LABEL version="3.1"
 
