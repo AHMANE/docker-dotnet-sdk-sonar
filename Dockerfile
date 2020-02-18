@@ -2,9 +2,8 @@ FROM mcr.microsoft.com/dotnet/core/sdk:3.1.101
 LABEL AHMANE Hafid <hahmane@sii.fr>
 LABEL version="3.1"
 
-# Install the java runtime environment 8
+# Install the java runtime environment 11
 RUN apt-get update && apt-get install openjdk-11-jre -y
-#RUN apt-get -q update && apt-get -y -q install --no-install-recommends -t stretch-backports openjdk-11-jdk
 
 # Install the sonar scanner for .netCore
 RUN dotnet tool install --global dotnet-sonarscanner --version 4.8.0
